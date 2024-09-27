@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Ledger&display=swap");
+
+.title-name {
+  margin: 0;
+  padding: 30px;
+  font-size: 2rem;
+  font-family: "Ledger", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #000000;
+}
+.parallax {
+  /* The image used */
+  background-image: url("/src/PhotoImages/1625120256What_is_an_IT_company.jpg"); /* Update with the correct path to your image */
+
+  /* Set a specific height */
+  min-height: 700px; /* Adjust as needed */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Add some overlay for better text visibility if needed */
+  position: relative;
+  color: #000000;
+}
+
+/* .parallax::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Adjust opacity for the overlay effect */
+.box-card-c:hover {
+  background-color: blueviolet;
+  transition: 1s;
+  color: white;
+}

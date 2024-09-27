@@ -1,0 +1,160 @@
+/* @media (max-width: 991px) {
+  .navbar-scroll {
+    background-color: #fff;
+  }
+
+  .navbar-scroll .navbar-brand,
+  .navbar-scroll .nav-link,
+  .navbar-scroll .fa-bars {
+    color: #4f4f4f !important;
+  }
+}
+
+.navbar-brand {
+  letter-spacing: 3px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.navbar-scroll .navbar-brand,
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars {
+  color: #fff;
+}
+
+.navbar-scroll {
+  box-shadow: none;
+}
+
+.navbar-scrolled {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.navbar-scrolled .navbar-brand,
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars {
+  color: #4f4f4f;
+}
+
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+@media (max-width: 450px) {
+  #intro {
+    height: 950px !important;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 750px) {
+  #intro {
+    height: 1100px !important;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 990px) {
+  #intro {
+    height: 600px !important;
+  }
+}
+
+.display-1 {
+  font-weight: 500 !important;
+  letter-spacing: 40px;
+}
+
+@media (min-width: 1600px) {
+  .display-1 {
+    font-size: 10rem;
+  }
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+span {
+  font-size: 1rem;
+}
+header {
+  background-color: #fff;
+  box-shadow: 0 0 5px (0, 0, 0, 0.5);
+  padding: 1rem 0;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container nav .logo {
+  color: #233b6c;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.container .nav-link {
+  display: flex;
+}
+
+.container .nav-link li {
+  list-style: none;
+  margin: 0 0.5rem;
+}
+.container ul li a {
+  color: #1a3e84;
+  font-size: 1.1rem;
+  padding: 0.7rem 1rem;
+  display: block;
+  border-radius: 10px;
+  border-radius: 4px;
+  text-decoration-line: none;
+}
+/* .container ul li a:hover {
+  background-color: #233b6c;
+  color: #fff;
+  border-radius: 10px;
+} */
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 375px) {
+  .nav-link.active {
+    top: 11%;
+    transition: all 0s3 ease-in;
+  }
+}
+@media (max-width: 768px) {
+  .icon {
+    display: block;
+  }
+  .container .nav-link {
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #fff;
+    position: absolute;
+    width: 350px;
+    height: 60vh;
+    top: -800px;
+    right: 0;
+    z-index: 10;
+    text-align: center;
+  }
+}
+.nav-link.active {
+  top: 11%;
+  transition: all 0s3 ease-in;
+}
