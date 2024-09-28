@@ -1,8 +1,10 @@
 import { useEffect, useRef } from "react";
 import TypeIt from "typeit";
+// import Counter from "./Counter"; // Importing the Counter component
 
 import "./AboutNav.css";
 import M1 from "../PhotoImages/9150897.jpg";
+
 const About = () => {
   const typeItRef = useRef();
 
@@ -10,8 +12,6 @@ const About = () => {
     typeItRef.current = new TypeIt(".ma-title", {
       strings: "",
       speed: 50,
-      trigger: "loop",
-
       waitUntilVisible: true,
     }).go();
   }, []);
@@ -20,19 +20,46 @@ const About = () => {
     <>
       <div className="banners">
         <img src={M1} alt="background" />
-        <p className="ma-title text-center">WELCOME TO QUANTUM INFO SOLUTION</p>
-        <h6>
+        <h1 className="ma-title text-center">
+          WELCOME TO QUANTUM INFO SOLUTION
+        </h1>
+        <p>
           It is a long established fact that a reader will be distracted by the
           readable content
-        </h6>
-        <br></br>
+        </p>
+        <br />
         <button>Hover me</button>
       </div>
+
       <div className="scroll-banner">
-        <div className="container">
-          <div className="box-1"></div>
+        <div className="counter-wapper">
+          <div className="counter">
+            <h1 className="count" data-target="1234">
+              0
+            </h1>
+            <p>GXJSHFCJSDHJJH</p>
+          </div>
+          <div className="counter">
+            <h1 className="count" data-target="1234">
+              0
+            </h1>
+            <p>GXJSHFCJSDHJJH</p>
+          </div>
+          <div className="counter">
+            <h1 className="count" data-target="1234">
+              0
+            </h1>
+            <p>GXJSHFCJSDHJJH</p>
+          </div>
+          <div className="counter">
+            <h1 className="count" data-target="1234">
+              0
+            </h1>
+            <p>GXJSHFCJSDHJJH</p>
+          </div>
         </div>
       </div>
+
       <div className="our text-center">
         <h1>Our Mission</h1>
         <p>
@@ -43,15 +70,7 @@ const About = () => {
           By focusing on both basic and advanced skills, we help professionals
           and students alike stay ahead of the technological curve.
         </p>
-        <h1>Our Mission</h1>
-        <p>
-          At Quantum, our mission is to bridge the gap between technology and
-          people by providing comprehensive and accessible IT training programs.
-          We believe that learning should be hands-on and industry-relevant,
-          which is why our courses are designed to offer real-world experience.
-          By focusing on both basic and advanced skills, we help professionals
-          and students alike stay ahead of the technological curve.
-        </p>
+
         <h1>Why Choose Quantum?</h1>
         <p>
           Expert Instructors: Our trainers are industry professionals with years
@@ -62,6 +81,7 @@ const About = () => {
           designed to provide you with practical skills that you can immediately
           apply to your job or project.
         </p>
+
         <h1>Our Vision</h1>
         <p>
           We envision a future where everyone has the opportunity to harness the
